@@ -2,7 +2,22 @@
 theme :
   name : dbyll
 ---
+<!-- 네비게이션 바 오른쪽에 검색 폼 추가 -->
+<div class="navbar-collapse collapse">
+  <ul class="nav navbar-nav navbar-right">
+    <!-- 기존의 네비게이션 링크들 -->
+    <li>
+      <form class="navbar-form" role="search" action="/search" method="get">
+        <button type="submit" class="btn btn-default">Search</button>
+      </form>
+    </li>
+  </ul>
+</div>
+
+
 {% include default.html %}
+
+
 
 {% if site.google_analytics %}
 <!-- Asynchronous Google Analytics snippet -->
@@ -16,3 +31,15 @@ theme :
   ga('send', 'pageview');
 </script>
 {% endif %}
+
+
+
+
+
+
+
+
+
+
+
+
