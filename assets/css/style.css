@@ -102,9 +102,9 @@ article{
 }
 
 .post-date {
-	text-transform: uppercase;
+	text-transform: capitalize;
 	font-size: 14px;
-	letter-spacing: 3px;
+	letter-spacing: 1px;
 }
 
 article {
@@ -188,3 +188,5 @@ footer {
 ul.dropdown-menu>li>a>i.fa {
     width: 1.3em;
 }
+
+

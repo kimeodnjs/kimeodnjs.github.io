@@ -2,28 +2,19 @@
 layout: page
 tagline:
 ---
-
 {% for post in paginator.posts %}
 
 <article class="home">
+  <div class="post-header">
+    <h2>
+      <a href="{{ site.BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
+    </h2>
+    <span class="post-date">
+      {{ post.date | date: "%b %d, %Y" }}
+    </span>
+  </div>
 
-  <span class="post-date">
-    {% assign d = post.date | date: "%d" | plus:'0' %}
-    {{ post.date | date: "%B" }}
-    {% case d %}
-    {% when 1 or 21 or 31 %}{{ d }}st,
-    {% when 2 or 22 %}{{ d }}nd,
-    {% when 3 or 23 %}{{ d }}rd,
-    {% else %}{{ d }}th,
-    {% endcase %}
-    {{ post.date | date: "%Y" }}
-  </span>
-
-  <h2>
-    <a href="{{ site.BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
-  </h2>
-
-  <div>
+  <div class="post-content">
     {% if post.fullview %}
     {{ post.content }}
     {% else %}
@@ -36,7 +27,7 @@ tagline:
     {% endif %}
     {% endif %}
   </div>
-
+  <hr/>
 </article>
 {% endfor %}
 <hr/>
