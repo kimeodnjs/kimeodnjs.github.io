@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Stuff_I_like</title>
+		<description>Stylish Jekyll Theme</description>
+		<link>/</link>
+		<atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+		
+			<item>
+				<title>자주 쓰는 명령어들</title>
+				<description>&lt;h2 id=&quot;0-목차&quot;&gt;0. 목차&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;#1-github&quot;&gt;1. Github&lt;/a&gt; &lt;br /&gt;
+&lt;a href=&quot;#2-linux&quot;&gt;2. Linux&lt;/a&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;1-github&quot;&gt;1. Github&lt;/h2&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;span style=&quot;color:black&quot;&gt;처음 연결 시&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-commandline&quot;&gt;현재 directory에 로컬 저장소 생성: git init
+
+로컬 저장소를 origin이라는 원격 저장소에 연결: git remote add origin &amp;lt;원격저장소 주소&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;span style=&quot;color:black&quot;&gt;주요 명령어&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-commandline&quot;&gt;현재 directory의 파일을 staging area에 추가: git add &amp;lt;파일명&amp;gt;
+현재 directory의 모든 파일을 staging area에 추가: git add .
+
+현재 staging area의 파일들을 commit: git commit -m &apos;commit message&apos;
+
+commit한 파일들을 원격 저장소의 특정 브랜치에 push: git push &amp;lt;원격저장소명&amp;gt; &amp;lt;브랜치명&amp;gt;
+
+원격 저장소의 특정 브랜치에 있는 파일들을 로컬 저장소에 가져오기: git pull &amp;lt;원격저장소명&amp;gt; &amp;lt;브랜치명&amp;gt;
+
+commit 이력 확인: git log
+
+현재 directory의 상태 확인: git status
+
+원격 저장소의 내용을 복제: git clone &amp;lt;원격저장소 주소&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;span style=&quot;color:black&quot;&gt;commit 기록 삭제&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-commandline&quot;&gt;최근 n개까지의 commit 기록 삭제: git reset --hard HEAD~n
+특정 commit까지 roll-back: git reset --hard &amp;lt;commit id&amp;gt;
+
+원격 저장소의 commit 기록 갱신: git push -f &amp;lt;원격저장소명&amp;gt; &amp;lt;브랜치명&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;2-linux&quot;&gt;2. Linux&lt;/h2&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;span style=&quot;color:black&quot;&gt;주요 명령어&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-commandline&quot;&gt;현재 directory의 경로를 출력: pwd
+
+ls
+현재 directory의 파일 목록 출력: ls
+
+echo
+나의 Home directory 주소 출력: echo $HOME
+
+cd
+특정 directory로 이동: cd &amp;lt;디렉토리 경로&amp;gt;
+홈 directory로 이동: cd ~
+
+mv
+file1을 file2로 이름 변경: mv &amp;lt;file1&amp;gt; &amp;lt;file2&amp;gt;
+file1을 dir1으로 이동: mv &amp;lt;file&amp;gt; &amp;lt;dir1&amp;gt;
+dir1을 dir2의 하위로 이동: mv &amp;lt;dir1&amp;gt; &amp;lt;dir2&amp;gt;
+
+cp
+dir1의 file1을 dir2의 file2로 복사: cp &amp;lt;dir1/file1&amp;gt; &amp;lt;dir2/file2&amp;gt;
+dir1의 하위 directory까지 모두 dir2로 복사: cp -r &amp;lt;dir1&amp;gt; &amp;lt;dir2&amp;gt;
+
+내장 파이썬 실행: ipython --pylab
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;span style=&quot;color:black&quot;&gt;파일 열기, 닫기, 수정&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-commandline&quot;&gt;vim에디터로 파일 열기: vi/vim &amp;lt;파일명&amp;gt;
+
+모드 전환
+커서의 위치에서 입력 모드로 전환: i
+
+저장: :w
+닫기: :q
+저장 후 종료: :wq
+저장하지 않고 강제 종료: :q!
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;span style=&quot;color:black&quot;&gt;Bundler&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-commandline&quot;&gt;jekyll 로컬 서버 실행: bundle exec jekyll serve
+
+로컬 서버 강제 종료
+port 번호로 PID 찾기: lsof -i :&amp;lt;포트번호&amp;gt;
+PID로 강제 종료하기: kill -9 &amp;lt;PID&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+				<pubDate>Tue, 26 Sep 2023 00:00:00 +0900</pubDate>
+				<link>/computers/2023/09/26/%E1%84%8C%E1%85%A1%E1%84%8C%E1%85%AE-%E1%84%8A%E1%85%B3%E1%84%82%E1%85%B3%E1%86%AB-%E1%84%86%E1%85%A7%E1%86%BC%E1%84%85%E1%85%A7%E1%86%BC%E1%84%8B%E1%85%A5%E1%84%83%E1%85%B3%E1%86%AF.html</link>
+				<guid isPermaLink="true">/computers/2023/09/26/%E1%84%8C%E1%85%A1%E1%84%8C%E1%85%AE-%E1%84%8A%E1%85%B3%E1%84%82%E1%85%B3%E1%86%AB-%E1%84%86%E1%85%A7%E1%86%BC%E1%84%85%E1%85%A7%E1%86%BC%E1%84%8B%E1%85%A5%E1%84%83%E1%85%B3%E1%86%AF.html</guid>
+			</item>
+		
+			<item>
+				<title>Test</title>
+				<description>&lt;h2 id=&quot;0-목차&quot;&gt;0. 목차&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;#1-upload-youtube-video&quot;&gt;1. Upload youtube video&lt;/a&gt; &lt;br /&gt;
+&lt;a href=&quot;#2-upload-image&quot;&gt;2. Upload image&lt;/a&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;1-upload-youtube-video&quot;&gt;1. Upload youtube video&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;유튜브 영상에서 소스 코드 복사&lt;/li&gt;
+  &lt;li&gt;붙여넣기&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;&amp;lt;Example&amp;gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;iframe width=&quot;100%&quot; height=&quot;512&quot; src=&quot;https://www.youtube.com/embed/rk0ynbs65iQ?list=RDrk0ynbs65iQ&quot; title=&quot;Still with You&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;2-upload-image&quot;&gt;2. Upload image&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;주소 복사가 가능한 경우&lt;/strong&gt;
+    &lt;ol&gt;
+      &lt;li&gt;이미지 주소를 복사한다.&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;![이미지 이름](이미지 주소)&lt;/code&gt;    &lt;br /&gt;
+&lt;img src=&quot;https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4hZcA1IYkT_3o6QdcDyGJ30_Lh4Y6Dj4Yv6B3XHEymMF4RDc13SW4OZ05njQ947Ny5h0&amp;amp;usqp=CAU&quot; alt=&quot;Image&quot; /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;주소 복사가 불가능한 로컬 파일의 경우&lt;/strong&gt;
+    &lt;ol&gt;
+      &lt;li&gt;아무 Github repository의 Issues에 들어가서 New issue를 누른다.&lt;/li&gt;
+      &lt;li&gt;로컬 이미지 파일을 내용란에 끌어다 놓으면 주소가 생성된다. &lt;br /&gt;
+  &lt;img src=&quot;https://github.com/kimeodnjs/kimeodnjs.github.io/assets/111210886/d987621d-4659-4d97-893d-0373dde99926&quot; alt=&quot;profile&quot; /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;사이즈를 조절할 수 있는 양식&lt;/strong&gt; &lt;br /&gt;
+  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;img  src=&quot;https://url/image.png&quot;  width=&quot;50&quot;  height=&quot;50&quot;/&amp;gt;&lt;/code&gt; &lt;br /&gt;
+  &lt;img src=&quot;https://github.com/kimeodnjs/kimeodnjs.github.io/assets/111210886/d987621d-4659-4d97-893d-0373dde99926&quot; width=&quot;150&quot; height=&quot;150&quot; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+				<pubDate>Mon, 25 Sep 2023 00:00:00 +0900</pubDate>
+				<link>/blog/test/2023/09/25/test.html</link>
+				<guid isPermaLink="true">/blog/test/2023/09/25/test.html</guid>
+			</item>
+		
+			<item>
+				<title>Sample</title>
+				<description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+
+</description>
+				<pubDate>Thu, 14 Nov 2013 00:00:00 +0900</pubDate>
+				<link>/blog/2013/11/14/sample.html</link>
+				<guid isPermaLink="true">/blog/2013/11/14/sample.html</guid>
+			</item>
+		
+	</channel>
+</rss>
