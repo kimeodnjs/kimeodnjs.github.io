@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61122e48-0d17-455a-a6a7-9dc5ed43a94c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/Blog/2013-11-14-sample.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/Blog/2023-09-14-Welcome!.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/Blog/Test/2023-09-25-test.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/Computers/2023-09-26-자주 쓰는 명령어들.md" beforeDir="false" />
-    </list>
+    <list default="true" id="61122e48-0d17-455a-a6a7-9dc5ed43a94c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
